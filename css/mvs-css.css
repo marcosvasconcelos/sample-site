@@ -21,46 +21,63 @@ section {
   padding: 50px;
 }
 
-#product img {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
+#product-ops {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
-#team {
+.product-ops-item {
+  width: calc(45% - 10px);
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #1f2935;
+  border-radius: 4px;
+}
+
+.product-ops-item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px; 
+  margin-bottom: 10px;
+}
+
+#team-mvs {
   text-align: center;
   padding: 50px;
 }
 
-.team-member {
+.team-eng {
   display: inline-block;
   margin: 20px;
   text-align: center;
 }
 
-.team-member img {
+.team-eng img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-#contact {
+#contact-mvs {
   background-color: #1f2935;
   text-align: center;
   padding: 50px;
 }
 
-#contact h2 {
+#contact-mvs h2 {
   color: #fff;
   margin-bottom: 20px;
 }
 
-#contact form {
+#contact-mvs form {
   text-align: center;
-  margin-top: 20px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 400px; /* Define a largura máxima do formulário */
 }
 
-#contact label, #contact input[type="submit"] {
+#contact-mvs label,
+#contact-mvs input[type="submit"] {
   display: block;
   margin-bottom: 10px;
 }
